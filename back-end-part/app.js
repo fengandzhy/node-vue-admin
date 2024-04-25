@@ -1,10 +1,13 @@
-const http = require('http');
-const port = '3000';
+const express = require('express');
+const app = express();
 
-let app = http.createServer((req,res)=>{
-    res.end('Hello world');
-});
+// const http = require('http');
+// const port = '3000';
+//
+// let app = http.createServer((req,res)=>{
+//     res.end('Hello world');
+// });
 
 app.listen(3007, ()=>{
-    console.log('http://127.0.0.1:3007:', port);
+    console.log('http://127.0.0.1:3007');
 });
